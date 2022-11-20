@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="color-scheme" content="light">
+	<title>MuranClicker</title>
+	<!-- GoogleFonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/heh.png" />
+</head>
+
+<body>
+	<div id="page">
+		<div id="center">
+			<!-- Favicon -->
+			<button id="mainbutton" onclick="increase()"><img src="/images/heh.png" width="100" height="100"></button>
+        <div id="info">
+           <p>Total <i>Muran Faces:</i> <span id="totalmanfaces">0</span></p>
+        </div>
+       </div>
+       <div id="items">
+      <div class="item">
+        <h3>Noga WoW</h3>
+        <div class="itemImage"><img src="/images/upgrades/heh2.png" width="80" height="80"></div>
+            <div id="TextContainer">
+              <p>Ilosc: <span id="leftlegs">0</span></p>
+              <p>Cena: <span id="leftlegprice">0</span></p>
+              <p></p>
+            </div>
+          </div>
+          <div class="item">
+            <div id="TextContainer">
+              <p></p>
+              <p></p>
+              <p></p>
+            </div>
+          </div>
+          <div class="item">
+            <div id="TextContainer">
+              <p></p>
+              <p></p>
+              <p></p>
+            </div>
+          </div>
+      </div>
+      <div id="end">
+        <p>Tryb dla Zaawansowego dewlewopera </p><label class="switch">
+  <input type="checkbox" onclick="devmode()" id="devmodeoption"><span class="slider round"></span>
+</label>
+<br />
+<br />
+<label class="switch">
+  <input type="checkbox" onclick="" id="devmodeoption"><span class="slider round"></span>
+   </label>
+      </div>
+      <div id="devmodecontent" style="display:none">
+        <div id="center">
+          <br/>
+          <br/>
+           <div id="developermodecontainer">
+             <br />
+             <br />
+             <span id="category">inne</span>
+             <br />
+             <br />
+            <button id="developermodebutton" class="modetoggle">Zmien tlo</button>
+            <br />
+            <br />
+            <br />
+          </div>
+        </div>
+      </div>
+   </div>
+    <script src="script.js"></script>
+    <script src="themes.js"></script>
+  </body>
+</html>
